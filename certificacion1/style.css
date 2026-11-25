@@ -1,0 +1,295 @@
+/* Configuración general */
+* {
+  box-sizing: border-box; /* Hace que el ancho y alto incluyan el relleno y el borde, evitando que el elemento se agrande más de lo definido */
+}
+
+body {
+  margin: 0; /* Elimina el espacio predeterminado que el navegador deja alrededor de la página */
+  min-height: 100vh; /* Hace que el cuerpo ocupe al menos toda la altura de la pantalla */
+  display: flex; /* Activa Flexbox para organizar los elementos principales del cuerpo en una fila o columna */
+  background-color: #ffffff; /* Fondo blanco de la página */
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif; /* Tipo de letra usado en todo el texto */
+  color: #333333; /* Color oscuro para el texto principal */
+}
+
+/* Barra lateral */
+.sidebar {
+  width: 25%; /* Ocupa una cuarta parte del ancho total de la pantalla */
+  display: flex; /* Activa Flexbox para organizar los elementos de la barra lateral */
+  flex-direction: column; /* Apila los elementos uno debajo de otro en la barra lateral */
+  align-items: center; /* Centra los elementos horizontalmente dentro de la barra lateral */
+  text-align: center; /* Centra el texto dentro de la barra lateral */
+  background-color: #ffffff; /* Fondo blanco de la barra lateral */
+  border-right: 3px solid #777777; /* Línea gris gruesa a la derecha que separa la barra lateral del resto */
+  padding-top: 55px; /* Espacio interno en la parte superior de la barra lateral */
+  padding-bottom: 8px; /* Espacio interno en la parte inferior de la barra lateral */
+}
+
+.logo {
+  display: flex; /* Activa Flexbox para organizar los elementos del logo */
+  flex-direction: column; /* Apila el nombre y el icono uno debajo de otro */
+  align-items: center; /* Centra los elementos del logo horizontalmente */
+  gap: 12px; /* Espacio de 12 píxeles entre el nombre y el icono del gato */
+}
+
+.nombre-logo {
+  margin: 0; /* Elimina el espacio predeterminado alrededor del nombre del logo */
+  font-size: 32px; /* Tamaño grande para el nombre "miau love" */
+  font-weight: 700; /* Pone el nombre en negrita */
+  line-height: 1.1; /* Espacio reducido entre líneas del nombre */
+}
+
+.miau {
+  color: #333333; /* Color oscuro para la palabra "miau" */
+}
+
+.love {
+  color: #c27ba0; /* Color rosado para la palabra "love" */
+}
+
+.icono-gato {
+  display: block; /* Hace que el icono se comporte como un bloque, ocupando su propia línea */
+}
+
+.menu-lateral {
+  margin-top: 80px; /* Espacio arriba del menú para separarlo del logo */
+}
+
+.lista-menu {
+  margin: 0; /* Elimina el margen predeterminado de la lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+  list-style: none; /* Quita los puntos o viñetas que ponen las listas por defecto */
+  display: flex; /* Activa Flexbox para organizar las opciones del menú */
+  flex-direction: column; /* Apila las opciones una debajo de otra */
+  gap: 30px; /* Espacio de 30 píxeles entre cada opción del menú */
+}
+
+.opcion-menu {
+  background: none; /* Quita el fondo predeterminado del botón */
+  border: none; /* Quita el borde predeterminado del botón */
+  font-family: inherit; /* Usa la misma fuente que el resto de la página */
+  font-size: 18px; /* Tamaño del texto de las opciones del menú */
+  color: #333333; /* Color oscuro para el texto de las opciones */
+  padding: 0; /* Sin relleno interno en los botones de opciones */
+  cursor: pointer; /* Muestra una manita al pasar el mouse, indicando que es clickeable */
+}
+
+.opcion-menu:hover {
+  color: #c27ba0; /* Cambia el texto a color rosado cuando el usuario pasa el mouse sobre la opción */
+}
+
+.botones-extra {
+  margin-top: 85px; /* Espacio arriba del contenedor de botones extra */
+  display: flex; /* Activa Flexbox para organizar los botones extra */
+  flex-direction: column; /* Apila los botones uno debajo de otro */
+  align-items: center; /* Centra los botones horizontalmente */
+  gap: 22px; /* Espacio de 22 píxeles entre los botones extra */
+}
+
+.boton-extra {
+  width: 165px; /* Ancho fijo de 165 píxeles para los botones */
+  height: 42px; /* Alto fijo de 42 píxeles para los botones */
+  border: 3px solid #1a1a1a; /* Borde negro grueso alrededor del botón */
+  border-radius: 0; /* Esquinas rectas, sin redondear */
+  font-family: inherit; /* Usa la misma fuente que el resto de la página */
+  font-size: 20px; /* Tamaño del texto de los botones extra */
+  font-weight: 700; /* Texto en negrita */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.35); /* Sombra debajo del botón para dar profundidad */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+}
+
+.boton-configuracion {
+  background-color: #d5a6bd; /* Fondo rosado claro para el botón de configuración */
+  color: #333333; /* Texto oscuro en el botón de configuración */
+}
+
+.boton-sesion {
+  background-color: #721b46; /* Fondo magenta oscuro para el botón de cerrar sesión */
+  color: #ffffff; /* Texto blanco en el botón de cerrar sesión */
+}
+
+.pie-sidebar {
+  margin-top: auto; /* Empuja el pie de la barra lateral hacia abajo, ocupando el espacio sobrante */
+  line-height: 1.5; /* Espacio entre líneas del texto del pie */
+  font-size: 17px; /* Tamaño pequeño para el texto del pie */
+  color: #333333; /* Color oscuro para el texto del pie */
+}
+
+.pie-sidebar small {
+  display: block; /* Hace que cada línea del pie ocupe su propia fila */
+}
+
+/* Contenido principal */
+.contenido {
+  flex: 1; /* Hace que el contenido ocupe todo el espacio sobrante después de la barra lateral */
+  min-width: 0; /* Evita que el contenido se desborde horizontalmente */
+  display: flex; /* Activa Flexbox para organizar el encabezado y el contenido principal */
+  flex-direction: column; /* Apila el encabezado y el contenido uno debajo de otro */
+}
+
+.cabecera {
+  height: 122px; /* Alto fijo de 122 píxeles para el encabezado rosado */
+  display: flex; /* Activa Flexbox para organizar el encabezado */
+  justify-content: space-between; /* Distribuye los elementos dejando el máximo espacio entre ellos (hamburguesa a la izquierda, buscador a la derecha) */
+  align-items: center; /* Centra los elementos verticalmente dentro del encabezado */
+  padding: 0 16px 0 50px; /* Espacio interno: 0 arriba, 16 a la derecha, 0 abajo, 50 a la izquierda */
+  background-color: #c27ba0; /* Fondo rosado del encabezado */
+  border-bottom: 3px solid #333333; /* Línea negra gruesa debajo del encabezado que lo separa del contenido */
+}
+
+.boton-menu {
+  width: 32px; /* Ancho del botón del menú hamburguesa */
+  height: 28px; /* Alto del botón del menú hamburguesa */
+  background: none; /* Sin fondo propio */
+  border: none; /* Sin borde propio */
+  padding: 0; /* Sin relleno interno */
+  display: flex; /* Activa Flexbox para organizar las tres líneas de la hamburguesa */
+  flex-direction: column; /* Apila las tres líneas una debajo de otra */
+  justify-content: space-between; /* Distribuye las líneas con espacio entre ellas */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+}
+
+.boton-menu span {
+  width: 100%; /* Cada línea ocupa todo el ancho del botón */
+  height: 5px; /* Grosor de cada línea de la hamburguesa */
+  background-color: #1a1a1a; /* Color negro oscuro de las líneas */
+}
+
+.buscador {
+  display: flex; /* Activa Flexbox para organizar el campo de búsqueda y el botón */
+  align-items: center; /* Centra el campo y el botón verticalmente */
+}
+
+.campo-busqueda {
+  width: 285px; /* Ancho fijo del campo de texto */
+  height: 42px; /* Alto fijo del campo de texto */
+  border: 2px solid #444444; /* Borde gris oscuro alrededor del campo de texto */
+  background-color: #ffffff; /* Fondo blanco del campo de texto */
+  border-radius: 0; /* Esquinas rectas, sin redondear */
+  padding: 0 10px; /* Espacio interno a los lados para que el texto no pegue al borde */
+  font-family: inherit; /* Usa la misma fuente que el resto de la página */
+  font-size: 17px; /* Tamaño del texto escrito en el buscador */
+  color: #333333; /* Color oscuro del texto escrito */
+}
+
+.campo-busqueda::placeholder {
+  color: #b0b0b0; /* Color gris claro del texto de ayuda (placeholder) */
+}
+
+.boton-buscar {
+  width: 55px; /* Ancho del botón de búsqueda */
+  height: 46px; /* Alto del botón de búsqueda */
+  background-color: #721b46; /* Fondo magenta oscuro del botón */
+  border: 3px solid #1a1a1a; /* Borde negro grueso alrededor del botón */
+  border-radius: 0; /* Esquinas rectas, sin redondear */
+  padding: 0; /* Sin relleno interno */
+  display: flex; /* Activa Flexbox para centrar el icono */
+  justify-content: center; /* Centra el icono horizontalmente */
+  align-items: center; /* Centra el icono verticalmente */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+}
+
+/* Título y categorías */
+.titulo-principal {
+  margin: 30px 0 0; /* Espacio arriba de 30 píxeles, sin espacio a los lados ni abajo */
+  text-align: center; /* Centra el texto del título */
+  font-size: 57px; /* Tamaño grande del título principal */
+  line-height: 65px; /* Espacio amplio entre las dos líneas del título */
+  font-weight: 700; /* Título en negrita */
+  color: #222222; /* Color casi negro del título */
+}
+
+.categorias {
+  margin-top: 27px; /* Espacio arriba de los botones de categoría */
+  display: flex; /* Activa Flexbox para poner los botones en fila */
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 38px; /* Espacio de 38 píxeles entre los botones de categoría */
+}
+
+.boton-categoria {
+  width: 166px; /* Ancho fijo del botón de categoría */
+  height: 60px; /* Alto fijo del botón de categoría */
+  border-radius: 999px; /* Redondea las esquinas lo máximo posible, formando una píldora */
+  border: 3px solid #1a1a1a; /* Borde negro grueso alrededor del botón */
+  background-color: #d5a6bd; /* Fondo rosado claro del botón */
+  color: #333333; /* Texto oscuro del botón */
+  font-family: inherit; /* Usa la misma fuente que el resto de la página */
+  font-size: 22px; /* Tamaño del texto del botón de categoría */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3); /* Sombra suave debajo del botón */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+}
+
+.boton-categoria.activa {
+  background-color: #a64d79; /* Cuando está activo, el fondo cambia a magenta */
+  color: #1a1a1a; /* Cuando está activo, el texto cambia a oscuro */
+}
+
+/* Galería */
+.galeria {
+  margin-top: 80px; /* Espacio arriba de la galería */
+  padding: 0 43px; /* Espacio interno a los lados de la galería */
+  display: flex; /* Activa Flexbox para poner las tarjetas en fila */
+  gap: 47px; /* Espacio de 47 píxeles entre las tarjetas */
+}
+
+.tarjeta {
+  flex: 1; /* Todas las tarjetas tienen el mismo ancho */
+  min-width: 0; /* Evita que el contenido desborde la tarjeta */
+  display: flex; /* Activa Flexbox dentro de la tarjeta */
+  flex-direction: column; /* Apila la imagen y el contador uno debajo de otro */
+}
+
+.foto {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  aspect-ratio: 37 / 30; /* Mantiene una proporción fija entre ancho y alto */
+  object-fit: cover; /* La imagen se ajusta al espacio sin deformarse */
+  border: 4px solid #1a1a1a; /* Borde negro grueso alrededor de la imagen */
+  display: block; /* Hace que la imagen se comporte como un bloque */
+}
+
+.likes {
+  margin: 11px 0 0; /* Espacio arriba de 11 píxeles para separar de la imagen */
+  height: 60px; /* Alto fijo de 60 píxeles para el contador */
+  background-color: #ffffff; /* Fondo blanco del contador */
+  border: 2px solid #777777; /* Borde gris alrededor del contador */
+  border-radius: 999px; /* Forma de píldora con esquinas totalmente redondeadas */
+  display: flex; /* Activa Flexbox para organizar el corazón y el número */
+  justify-content: center; /* Centra los elementos horizontalmente dentro del contador */
+  align-items: center; /* Centra los elementos verticalmente dentro del contador */
+  gap: 12px; /* Espacio de 12 píxeles entre el corazón y el número */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25); /* Sombra suave debajo del contador */
+}
+
+.boton-corazon {
+  background: none; /* Sin fondo propio */
+  border: none; /* Sin borde propio */
+  padding: 0; /* Sin relleno interno */
+  color: #a64d79; /* Color magenta del símbolo del corazón */
+  font-size: 36px; /* Tamaño grande del corazón */
+  line-height: 1; /* Espacio reducido entre líneas */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+}
+
+.numero-likes {
+  font-size: 24px; /* Tamaño del número de me gusta */
+  color: #555555; /* Color gris del número de me gusta */
+}
+
+/* Elementos ocultos o de apoyo */
+.formulario-sesion {
+  margin-top: 20px; /* Espacio arriba del formulario */
+  padding: 15px; /* Espacio interno del formulario */
+  background-color: #f5f5f5; /* Fondo gris muy claro del formulario */
+  border: 1px solid #cccccc; /* Borde gris claro alrededor del formulario */
+}
+
+.mensaje-busqueda {
+  margin-top: 20px; /* Espacio arriba del mensaje */
+  font-size: 18px; /* Tamaño normal del texto del mensaje */
+  color: #555555; /* Color gris medio del texto del mensaje */
+}
+
+/* Oculta la barra lateral al pulsar el menú */
+.sidebar.oculta {
+  display: none; /* Cuando se agrega esta clase, la barra lateral desaparece completamente */
+}

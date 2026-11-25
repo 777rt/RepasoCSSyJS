@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Idioma español -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miau Love</title>
+    <link rel="stylesheet" href="style.css" />   <!-- Conexión a CSS -->
+    <script src="script.js" defer></script>    <!-- Conexión a JS -->
+  </head>
+
+  <body>
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div class="logo">
+        <p class="nombre-logo">
+          <span class="miau">miau</span>
+          <span class="love">love</span>
+        </p>
+      </div>
+
+      <nav class="menu-lateral">
+        <ul class="lista-menu">
+          <li><button class="opcion-menu">Inicio</button></li>
+          <li><button class="opcion-menu">Subir Imagen</button></li>
+          <li><button class="opcion-menu">Contacto</button></li>
+          <li><button class="opcion-menu">Favoritos</button></li>
+          <li><button class="opcion-menu">Referencias</button></li>
+        </ul>
+
+        <div class="botones-extra">
+          <button class="boton-extra boton-configuracion">Configuración</button>
+          <button class="boton-extra boton-sesion" id="boton-cerrar-sesion">Cerrar Sesión</button>
+        </div>
+      </nav>
+
+      <footer class="pie-sidebar">
+        <small>Todos los derechos reservados</small>
+        <small>creado por ★</small>
+      </footer>
+
+    </aside>
+
+    <!-- Contenido principal -->
+    <div class="contenido" id="contenido">
+      <header class="cabecera">
+        <button class="boton-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <form class="buscador"  >
+          <input class="campo-busqueda" placeholder="Buscar"/>
+          <button class="boton-buscar" type="submit">
+          </button>
+        </form>
+      </header>
+
+      <main>
+        <h1 class="titulo-principal">
+          ¡Únete y comparte tu amor por<br />
+          los gatitos!
+        </h1>
+
+        <section class="categorias" id="categorias">
+          <button class="boton-categoria">Gatitos</button>
+          <button class="boton-categoria">Juveniles</button>
+          <button class="boton-categoria">Adultos</button>
+        </section>
+
+
+        <section class="galeria" id="galeria">
+          <article class="tarjeta">
+            <img class="foto" src="img/placeholder.svg"/>
+            <p class="likes">
+              <button class="boton-corazon">♥</button>
+              <span class="numero-likes">1</span>
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <img class="foto" src="img/placeholder.svg"/>
+            <p class="likes">
+              <button class="boton-corazon">♥</button>
+              <span class="numero-likes">2</span>
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <img class="foto" src="img/placeholder.svg"/>
+            <p class="likes">
+              <button class="boton-corazon">♥</button>
+              <span class="numero-likes">3</span>
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <img class="foto" src="img/placeholder.svg"/>
+            <p class="likes">
+              <button class="boton-corazon">♥</button>
+              <span class="numero-likes">4</span>
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

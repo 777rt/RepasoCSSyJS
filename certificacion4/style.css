@@ -1,0 +1,156 @@
+/* Configuración general */
+* {
+  box-sizing: border-box; /* Hace que el ancho y alto incluyan el relleno y el borde, evitando que el elemento se agrande más de lo definido */
+}
+
+body {
+  margin: 0; /* Elimina el espacio predeterminado que el navegador deja alrededor de la página */
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de letra usado en todo el texto */
+  background-color: #f5f5f5; /* Fondo gris muy claro de la página */
+  color: #333; /* Color oscuro para el texto principal */
+}
+
+/* Cabecera */
+.cabecera {
+  background-color: #e8f5e9; /* Fondo verde claro del encabezado */
+  padding: 15px 20px; /* Espacio interno: 15 arriba y abajo, 20 a los lados */
+  display: flex; /* Activa Flexbox para organizar el encabezado */
+  justify-content: space-between; /* Distribuye los elementos dejando el máximo espacio entre ellos */
+  align-items: center; /* Centra los elementos verticalmente dentro del encabezado */
+  border-bottom: 1px solid #ccc; /* Línea gris delgada debajo del encabezado */
+}
+
+.logo {
+  font-size: 28px; /* Tamaño del nombre del sitio en el encabezado */
+  font-weight: bold; /* Nombre del sitio en negrita */
+  color: #1b5e20; /* Color verde oscuro del logo */
+}
+
+.navegacion {
+  display: flex; /* Activa Flexbox para organizar los botones del menú */
+  gap: 15px; /* Espacio de 15 píxeles entre los botones */
+}
+
+.btn-adoptar,
+.btn-donar {
+  background-color: #388e3c; /* Fondo verde para los botones de acciones */
+  color: white; /* Texto blanco en los botones */
+  border: none; /* Sin borde predeterminado */
+  padding: 8px 16px; /* Espacio interno: 8 arriba y abajo, 16 a los lados */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto de los botones */
+}
+
+/* Filtro */
+.filtro {
+  background-color: #c8e6c9; /* Fondo verde claro de la sección de filtro */
+  padding: 15px 20px; /* Espacio interno: 15 arriba y abajo, 20 a los lados */
+  display: flex; /* Activa Flexbox para organizar el filtro */
+  align-items: center; /* Centra los elementos verticalmente dentro del filtro */
+  gap: 10px; /* Espacio de 10 píxeles entre los elementos del filtro */
+  border-bottom: 1px solid #ccc; /* Línea gris delgada debajo del filtro */
+}
+
+.texto-filtro {
+  font-size: 14px; /* Tamaño del texto del filtro */
+  font-weight: bold; /* Texto del filtro en negrita */
+  color: #2e7d32; /* Color verde oscuro del texto del filtro */
+}
+
+.select-filtro {
+  padding: 6px 12px; /* Espacio interno del selector */
+  font-size: 14px; /* Tamaño del texto del selector */
+  border: 1px solid #999; /* Borde gris alrededor del selector */
+}
+
+/* Contenido principal */
+.principal {
+  max-width: 1000px; /* Ancho máximo de 1000 píxeles para el contenido */
+  margin: 20px auto; /* Espacio arriba y abajo de 20 píxeles, y centrado horizontalmente */
+  padding: 0 20px; /* Espacio interno a los lados del contenido */
+}
+
+.galeria-arboles {
+  display: flex; /* Activa Flexbox para organizar las tarjetas de árboles */
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea si no caben */
+  gap: 20px; /* Espacio de 20 píxeles entre las tarjetas */
+}
+
+/* Tarjeta de árbol */
+.tarjeta-arbol {
+  background-color: white; /* Fondo blanco de la tarjeta */
+  border: 1px solid #ddd; /* Borde gris claro alrededor de la tarjeta */
+  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  width: 280px; /* Ancho fijo de 280 píxeles para cada tarjeta */
+  display: flex; /* Activa Flexbox dentro de la tarjeta */
+  flex-direction: column; /* Apila la imagen, título, descripción y botón uno debajo de otro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave debajo de la tarjeta para darle profundidad */
+}
+
+.tarjeta-arbol img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: 150px; /* Alto fijo de 150 píxeles para la imagen */
+  object-fit: cover; /* La imagen se ajusta al espacio sin deformarse */
+  border-bottom: 1px solid #eee; /* Borde gris claro debajo de la imagen */
+}
+
+.tarjeta-arbol h3 {
+  margin: 12px; /* Espacio de 12 píxeles alrededor del título */
+  font-size: 18px; /* Tamaño del título del árbol */
+  color: #2e7d32; /* Color verde oscuro del título del árbol */
+}
+
+.descripcion {
+  margin: 0 12px 12px 12px; /* Espacio a los lados y abajo de la descripción */
+  font-size: 14px; /* Tamaño del texto de la descripción */
+  color: #666; /* Color gris medio del texto de la descripción */
+}
+
+.btn-adoptar-arbol {
+  background-color: #4caf50; /* Fondo verde del botón */
+  color: white; /* Texto blanco en el botón */
+  border: none; /* Sin borde predeterminado */
+  padding: 10px; /* Espacio interno del botón */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto del botón */
+  margin: 0 12px 12px 12px; /* Espacio a los lados y abajo del botón */
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: #81c784; /* Fondo verde medio del pie de página */
+  padding: 30px 20px; /* Espacio interno: 30 arriba y abajo, 20 a los lados */
+  display: flex; /* Activa Flexbox para organizar el pie de página */
+  flex-wrap: wrap; /* Permite que las secciones pasen a la siguiente línea si no caben */
+  gap: 40px; /* Espacio de 40 píxeles entre las secciones del pie */
+  justify-content: space-between; /* Distribuye las secciones dejando el máximo espacio entre ellas */
+  color: #1b5e20; /* Color verde oscuro del texto del pie de página */
+}
+
+.pie-pagina h4 {
+  margin: 0 0 10px 0; /* Espacio abajo de 10 píxeles para separar del contenido */
+  font-size: 16px; /* Tamaño del subtítulo del pie de página */
+  font-weight: bold; /* Texto del subtítulo en negrita */
+}
+
+.pie-pagina p {
+  margin: 4px 0; /* Espacio pequeño arriba y abajo de cada párrafo */
+  font-size: 14px; /* Tamaño del texto de los párrafos */
+}
+
+.pie-pagina input {
+  padding: 8px 12px; /* Espacio interno del campo de texto */
+  border: 1px solid #66bb6a; /* Borde verde alrededor del campo de texto */
+  font-size: 14px; /* Tamaño del texto del campo de texto */
+  width: 220px; /* Ancho fijo de 220 píxeles para el campo de texto */
+}
+
+.btn-suscribir {
+  background-color: #388e3c; /* Fondo verde del botón */
+  color: white; /* Texto blanco en el botón */
+  border: none; /* Sin borde predeterminado */
+  padding: 8px 16px; /* Espacio interno: 8 arriba y abajo, 16 a los lados */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto del botón */
+  margin-top: 10px; /* Espacio arriba de 10 píxeles para separar del campo de texto */
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlorManía</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="cabecera">
+      <div class="logo">FlorManía</div>
+      <nav class="navegacion">
+        <a href="#" id="link-flores">Envía Flores</a>
+        <a href="#">Nosotros</a>
+      </nav>
+      <div class="acciones">
+        <button class="btn-sesion" id="btn-iniciar-sesion">Iniciar Sesión</button>
+      </div>
+    </header>
+
+    <section class="buscador">
+      <input type="text" placeholder="Buscar flores..." />
+      <button class="btn-buscar">Buscar</button>
+    </section>
+
+    <main class="principal">
+      <h1 class="titulo-destacado">Flor del Mes</h1>
+
+      <div class="flor-destacada">
+        <img id="imagen-flor" src="img/flor-mes.svg" alt="Flor del mes" />
+      </div>
+
+      <p class="resultados">Mostrando 50 resultados</p>
+      <a href="#" class="ver-todas">Ver todas</a>
+
+      <section class="galeria">
+        <article class="tarjeta">
+          <img src="img/flor1.svg" alt="Rosas de Paz" />
+          <h3>Rosas de Paz</h3>
+          <p class="precio">$45.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </article>
+
+        <article class="tarjeta">
+          <img src="img/flor2.svg" alt="Lirios Blancos" />
+          <h3>Lirios Blancos</h3>
+          <p class="precio">$52.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </article>
+
+        <article class="tarjeta">
+          <img src="img/flor3.svg" alt="Tulipanes Rojos" />
+          <h3>Tulipanes Rojos</h3>
+          <p class="precio">$38.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

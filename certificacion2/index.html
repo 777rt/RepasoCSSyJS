@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event-Astico</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="cabecera">
+      <div class="logo">EVENT-ASTICO</div>
+      <nav class="navegacion">
+        <a href="#">Inicio</a>
+        <a href="#">Crear Eventos</a>
+      </nav>
+      <div class="acciones">
+        <button class="btn-registrar">Registrarte</button>
+        <button class="btn-crear" id="btn-crear-evento">Crear Evento</button>
+      </div>
+    </header>
+
+    <section class="mapa-section">
+      <img id="mapa" src="img/mapa1.svg" alt="Mapa de eventos" />
+    </section>
+
+    <section class="filtros">
+      <button class="filtro activo">Eventos cercanos</button>
+      <button class="filtro" id="btn-nuevos-eventos">Nuevos Eventos</button>
+      <button class="filtro">Mis Eventos</button>
+      <select class="orden">
+        <option>Ordenar por Referencia</option>
+      </select>
+    </section>
+
+    <main class="galeria">
+      <article class="tarjeta">
+        <div class="fecha">10 may</div>
+        <div class="contenido-tarjeta">
+          <h3 class="titulo">Congreso de Tecnología</h3>
+          <p class="lugar">Andador...</p>
+          <button class="btn-asistentes">↑ 5</button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="fecha">15 jul</div>
+        <div class="contenido-tarjeta">
+          <h3 class="titulo">Fiesta de Verano</h3>
+          <p class="lugar">Parque Central</p>
+          <button class="btn-asistentes">↑ 11</button>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="fecha">18 dic</div>
+        <div class="contenido-tarjeta">
+          <h3 class="titulo">Paseo navideño</h3>
+          <p class="lugar">Plaza Mayor</p>
+          <button class="btn-asistentes">↑ 8</button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

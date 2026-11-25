@@ -1,0 +1,163 @@
+/* Configuración general */
+* {
+  box-sizing: border-box; /* Hace que el ancho y alto incluyan el relleno y el borde, evitando que el elemento se agrande más de lo definido */
+}
+
+body {
+  margin: 0; /* Elimina el espacio predeterminado que el navegador deja alrededor de la página */
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de letra usado en todo el texto */
+  background-color: #fafafa; /* Fondo gris muy claro de la página */
+  color: #333; /* Color oscuro para el texto principal */
+}
+
+/* Cabecera */
+.cabecera {
+  background-color: #f3e5f5; /* Fondo rosa claro del encabezado */
+  padding: 15px 20px; /* Espacio interno: 15 arriba y abajo, 20 a los lados */
+  display: flex; /* Activa Flexbox para organizar el encabezado */
+  justify-content: space-between; /* Distribuye los elementos dejando el máximo espacio entre ellos */
+  align-items: center; /* Centra los elementos verticalmente dentro del encabezado */
+  border-bottom: 1px solid #ccc; /* Línea gris delgada debajo del encabezado */
+}
+
+.logo {
+  font-size: 26px; /* Tamaño del nombre del sitio en el encabezado */
+  font-weight: bold; /* Nombre del sitio en negrita */
+  color: #880e4f; /* Color púrpura del logo */
+}
+
+.navegacion a {
+  margin-left: 20px; /* Espacio a la izquierda de cada enlace para separarlos */
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  color: #333; /* Color oscuro de los enlaces de navegación */
+  font-size: 14px; /* Tamaño del texto de los enlaces */
+}
+
+.acciones {
+  display: flex; /* Activa Flexbox para organizar los botones de acciones */
+  gap: 10px; /* Espacio de 10 píxeles entre los botones */
+}
+
+.btn-enviar,
+.btn-crear {
+  background-color: #d81b60; /* Fondo rosa para los botones de acciones */
+  color: white; /* Texto blanco en los botones */
+  border: none; /* Sin borde predeterminado */
+  padding: 8px 16px; /* Espacio interno: 8 arriba y abajo, 16 a los lados */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto de los botones */
+}
+
+/* Buscador */
+.buscador {
+  padding: 15px 20px; /* Espacio interno: 15 arriba y abajo, 20 a los lados */
+  background-color: #eceff1; /* Fondo gris claro de la sección de búsqueda */
+  border-bottom: 1px solid #ccc; /* Línea gris delgada debajo del buscador */
+  display: flex; /* Activa Flexbox para organizar el campo y el botón de búsqueda */
+  gap: 10px; /* Espacio de 10 píxeles entre el campo y el botón */
+}
+
+.buscador input {
+  flex: 1; /* Hace que el campo ocupe todo el espacio sobrante dentro del buscador */
+  padding: 8px 12px; /* Espacio interno: 8 arriba y abajo, 12 a los lados */
+  border: 1px solid #999; /* Borde gris alrededor del campo de texto */
+  font-size: 14px; /* Tamaño del texto del campo */
+}
+
+.btn-buscar {
+  background-color: #333; /* Fondo oscuro del botón de búsqueda */
+  color: white; /* Texto blanco en el botón de búsqueda */
+  border: none; /* Sin borde predeterminado */
+  padding: 8px 16px; /* Espacio interno: 8 arriba y abajo, 16 a los lados */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto del botón de búsqueda */
+}
+
+/* Contenido principal */
+.principal {
+  max-width: 1000px; /* Ancho máximo de 1000 píxeles para el contenido */
+  margin: 20px auto; /* Espacio arriba y abajo de 20 píxeles, y centrado horizontalmente */
+  padding: 0 20px; /* Espacio interno a los lados del contenido */
+}
+
+.titulo-destacado {
+  text-align: center; /* Centra el texto del título */
+  font-size: 22px; /* Tamaño del título destacado */
+  color: #880e4f; /* Color púrpura del título destacado */
+  margin-bottom: 20px; /* Espacio abajo de 20 píxeles para separar del siguiente contenido */
+}
+
+.flor-destacada {
+  text-align: center; /* Centra el contenido de la flor destacada */
+  margin-bottom: 20px; /* Espacio abajo de 20 píxeles para separar del siguiente contenido */
+}
+
+.flor-destacada img {
+  width: 100%; /* La imagen ocupa todo el ancho disponible */
+  max-width: 600px; /* Pero nunca más de 600 píxeles de ancho */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  border: 1px solid #ccc; /* Borde gris delgado alrededor de la imagen */
+  display: block; /* Hace que la imagen se comporte como un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.resultados {
+  text-align: center; /* Centra el texto del mensaje de resultados */
+  font-size: 14px; /* Tamaño del texto de resultados */
+  color: #666; /* Color gris medio del texto de resultados */
+  margin: 10px 0; /* Espacio arriba y abajo de 10 píxeles */
+}
+
+.ver-todas {
+  display: block; /* Hace que el enlace ocupe su propia línea */
+  margin: 0 auto 20px auto; /* Centra horizontalmente y deja espacio abajo de 20 píxeles */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: #d81b60; /* Color rosa del enlace */
+  font-size: 14px; /* Tamaño del texto del enlace */
+}
+
+/* Galería */
+.galeria {
+  display: flex; /* Activa Flexbox para organizar las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea si no caben */
+  gap: 20px; /* Espacio de 20 píxeles entre las tarjetas */
+}
+
+.tarjeta {
+  background-color: white; /* Fondo blanco de la tarjeta */
+  border: 1px solid #ddd; /* Borde gris claro alrededor de la tarjeta */
+  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  width: 280px; /* Ancho fijo de 280 píxeles para cada tarjeta */
+  display: flex; /* Activa Flexbox dentro de la tarjeta */
+  flex-direction: column; /* Apila la imagen, título, precio y botón uno debajo de otro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave debajo de la tarjeta para darle profundidad */
+}
+
+.tarjeta img {
+  width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+  height: 150px; /* Alto fijo de 150 píxeles para la imagen */
+  object-fit: cover; /* La imagen se ajusta al espacio sin deformarse */
+  border-bottom: 1px solid #eee; /* Borde gris claro debajo de la imagen */
+}
+
+.tarjeta h3 {
+  margin: 12px; /* Espacio de 12 píxeles alrededor del título */
+  font-size: 16px; /* Tamaño del título de la flor */
+}
+
+.precio {
+  margin: 0 12px 12px 12px; /* Espacio a los lados y abajo del precio */
+  font-size: 14px; /* Tamaño del texto del precio */
+  color: #880e4f; /* Color púrpura del precio */
+  font-weight: bold; /* Texto del precio en negrita */
+}
+
+.btn-agregar {
+  background-color: #d81b60; /* Fondo rosa del botón */
+  color: white; /* Texto blanco en el botón */
+  border: none; /* Sin borde predeterminado */
+  padding: 10px; /* Espacio interno del botón */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto del botón */
+  margin: 0 12px 12px 12px; /* Espacio a los lados y abajo del botón */
+}

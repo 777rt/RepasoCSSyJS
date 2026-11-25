@@ -1,0 +1,149 @@
+/* Configuración general */
+* {
+  box-sizing: border-box; /* Hace que el ancho y alto incluyan el relleno y el borde, evitando que el elemento se agrande más de lo definido */
+}
+
+body {
+  margin: 0; /* Elimina el espacio predeterminado que el navegador deja alrededor de la página */
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de letra usado en todo el texto */
+  background-color: #f5f5f5; /* Fondo gris muy claro de la página */
+}
+
+/* Cabecera */
+.cabecera {
+  background-color: #e0e0e0; /* Fondo gris claro del encabezado */
+  padding: 15px 20px; /* Espacio interno: 15 arriba y abajo, 20 a los lados */
+  display: flex; /* Activa Flexbox para organizar el encabezado */
+  justify-content: space-between; /* Distribuye los elementos dejando el máximo espacio entre ellos */
+  align-items: center; /* Centra los elementos verticalmente dentro del encabezado */
+  border-bottom: 1px solid #ccc; /* Línea gris delgada debajo del encabezado */
+}
+
+.logo {
+  font-size: 24px; /* Tamaño del nombre del sitio en el encabezado */
+  font-weight: bold; /* Nombre del sitio en negrita */
+  color: #333; /* Color oscuro del logo */
+}
+
+.navegacion a {
+  margin-left: 20px; /* Espacio a la izquierda de cada enlace para separarlos */
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  color: #333; /* Color oscuro de los enlaces de navegación */
+  font-size: 14px; /* Tamaño del texto de los enlaces */
+}
+
+.acciones {
+  display: flex; /* Activa Flexbox para organizar los botones de acciones */
+  gap: 10px; /* Espacio de 10 píxeles entre los botones */
+}
+
+.btn-registrar,
+.btn-crear {
+  background-color: #d32f2f; /* Fondo rojo para los botones de acciones */
+  color: white; /* Texto blanco en los botones */
+  border: none; /* Sin borde predeterminado */
+  padding: 8px 16px; /* Espacio interno: 8 arriba y abajo, 16 a los lados */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto de los botones */
+}
+
+/* Mapa */
+.mapa-section {
+  padding: 20px; /* Espacio interno alrededor del mapa */
+  background-color: #fff; /* Fondo blanco de la sección del mapa */
+}
+
+.mapa-section img {
+  width: 100%; /* La imagen ocupa todo el ancho disponible */
+  max-width: 900px; /* Pero nunca más de 900 píxeles de ancho */
+  display: block; /* Hace que la imagen se comporte como un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  border: 1px solid #ccc; /* Borde gris delgado alrededor de la imagen */
+}
+
+/* Filtros */
+.filtros {
+  display: flex; /* Activa Flexbox para organizar los filtros */
+  gap: 10px; /* Espacio de 10 píxeles entre los filtros */
+  padding: 15px 20px; /* Espacio interno: 15 arriba y abajo, 20 a los lados */
+  background-color: #f0f0f0; /* Fondo gris claro de la sección de filtros */
+  border-bottom: 1px solid #ccc; /* Línea gris delgada debajo de los filtros */
+}
+
+.filtro {
+  background: none; /* Sin fondo propio */
+  border: 1px solid #999; /* Borde gris alrededor del botón de filtro */
+  padding: 6px 12px; /* Espacio interno: 6 arriba y abajo, 12 a los lados */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  font-size: 14px; /* Tamaño del texto del filtro */
+}
+
+.filtro.activo {
+  background-color: #d32f2f; /* Cuando está activo, el fondo cambia a rojo */
+  color: white; /* Cuando está activo, el texto se pone blanco */
+  border-color: #d32f2f; /* Cuando está activo, el borde cambia a rojo */
+}
+
+select.orden {
+  margin-left: auto; /* Empuja el selector a la derecha, ocupando el espacio sobrante */
+  padding: 6px 12px; /* Espacio interno del selector */
+  font-size: 14px; /* Tamaño del texto del selector */
+}
+
+/* Galería de tarjetas */
+.galeria {
+  max-width: 1000px; /* Ancho máximo de 1000 píxeles para la galería */
+  margin: 20px auto; /* Espacio arriba y abajo de 20 píxeles, y centrado horizontalmente */
+  padding: 0 20px; /* Espacio interno a los lados de la galería */
+  display: flex; /* Activa Flexbox para organizar las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea si no caben */
+  gap: 20px; /* Espacio de 20 píxeles entre las tarjetas */
+}
+
+.tarjeta {
+  background-color: white; /* Fondo blanco de la tarjeta */
+  border: 1px solid #ddd; /* Borde gris claro alrededor de la tarjeta */
+  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  width: 280px; /* Ancho fijo de 280 píxeles para cada tarjeta */
+  display: flex; /* Activa Flexbox dentro de la tarjeta */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave debajo de la tarjeta para darle profundidad */
+}
+
+.fecha {
+  background-color: #d32f2f; /* Fondo rojo para la fecha */
+  color: white; /* Texto blanco en la fecha */
+  padding: 10px; /* Espacio interno alrededor del texto de la fecha */
+  font-weight: bold; /* Texto de la fecha en negrita */
+  font-size: 18px; /* Tamaño del texto de la fecha */
+  text-align: center; /* Centra el texto de la fecha */
+  min-width: 60px; /* Ancho mínimo de 60 píxeles para la fecha */
+}
+
+.contenido-tarjeta {
+  padding: 15px; /* Espacio interno dentro de la tarjeta */
+  flex: 1; /* Hace que el contenido ocupe el espacio sobrante dentro de la tarjeta */
+  display: flex; /* Activa Flexbox dentro del contenido de la tarjeta */
+  flex-direction: column; /* Apila los elementos uno debajo de otro */
+}
+
+.titulo {
+  margin: 0 0 10px 0; /* Espacio abajo de 10 píxeles para separar del lugar */
+  font-size: 16px; /* Tamaño del título del evento */
+  color: #333; /* Color oscuro del título del evento */
+}
+
+.lugar {
+  margin: 0 0 15px 0; /* Espacio abajo de 15 píxeles para separar del botón */
+  font-size: 14px; /* Tamaño del texto del lugar */
+  color: #666; /* Color gris medio del texto del lugar */
+}
+
+.btn-asistentes {
+  background: none; /* Sin fondo propio */
+  border: none; /* Sin borde propio */
+  color: #d32f2f; /* Color rojo del texto del botón */
+  font-weight: bold; /* Texto del botón en negrita */
+  font-size: 16px; /* Tamaño del texto del botón */
+  cursor: pointer; /* Muestra una manita al pasar el mouse */
+  margin-top: auto; /* Empuja el botón hacia abajo dentro de la tarjeta */
+}

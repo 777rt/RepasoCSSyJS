@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdoptaTuÁrbol</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="cabecera">
+      <div class="logo">AdoptaTuÁrbol</div>
+      <nav class="navegacion">
+        <button class="btn-adoptar">Adoptar</button>
+        <button class="btn-donar" id="btn-donar">Donar</button>
+      </nav>
+    </header>
+
+    <section class="filtro">
+      <span class="texto-filtro" id="texto-filtro">Mostrando:</span>
+      <select class="select-filtro" id="select-filtro">
+        <option>Todos los Árboles</option>
+        <option>Árboles Frutales</option>
+        <option>Árboles Nativos</option>
+      </select>
+    </section>
+
+    <main class="principal">
+      <section class="galeria-arboles">
+        <article class="tarjeta-arbol">
+          <img src="img/arbol1.svg" alt="Álamo" />
+          <h3>Álamo</h3>
+          <p class="descripcion">Árbol de hoja caduca con follaje amplio y grandes pecíolos.</p>
+          <button class="btn-adoptar-arbol">Adoptar</button>
+        </article>
+
+        <article class="tarjeta-arbol">
+          <img src="img/arbol2.svg" alt="Fresno" />
+          <h3>Fresno</h3>
+          <p class="descripcion">Árbol de porte elevado, rojo y con amplio follaje.</p>
+          <button class="btn-adoptar-arbol">Adoptar</button>
+        </article>
+
+        <article class="tarjeta-arbol">
+          <img src="img/arbol3.svg" alt="Pino" />
+          <h3>Pino</h3>
+          <p class="descripcion">Árbol de hoja perenne, de tronco recto y ramas extendidas.</p>
+          <button class="btn-adoptar-arbol">Adoptar</button>
+        </article>
+
+        <article class="tarjeta-arbol">
+          <img src="img/arbol4.svg" alt="Jacaranda" />
+          <h3>Jacaranda</h3>
+          <p class="descripcion">Árbol de flores violetas con follaje ligero y elegante.</p>
+          <button class="btn-adoptar-arbol">Adoptar</button>
+        </article>
+      </section>
+    </main>
+
+    <footer class="pie-pagina">
+      <div class="contacto">
+        <h4>Contáctanos</h4>
+        <p>Av. Principal 4102</p>
+        <p>Cd. Guzmán, 49000</p>
+        <p>Col. Centro</p>
+      </div>
+      <div class="enlaces">
+        <h4>Sitio</h4>
+        <p>Árboles Nativos</p>
+        <p>Arbolipedia</p>
+        <p>Propiedades</p>
+      </div>
+      <div class="suscribete">
+        <h4>Suscríbete</h4>
+        <input type="text" placeholder="Tu correo electrónico" />
+        <button class="btn-suscribir">Enviar</button>
+      </div>
+    </footer>
+  </body>
+</html>
